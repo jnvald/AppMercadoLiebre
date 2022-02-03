@@ -96,24 +96,47 @@ padding:20px;
 display:none;
 list-style:none;
 }
+.login-bar i {
+    margin: 5px;
+}
 .site-bar {
 margin-bottom:15px;
 }
-.burger-menu {
+
+/*Hamburguer menu*****/
+.hamburguer-button {
 text-align:center;
-background-color:#03264C;
+background-color:rgb(50, 106, 218);
+color:white;
 margin:auto;
 display:block;
 max-width:50px;
-color:white;
 border-radius: 8px;
 padding:15px 0px;
 font-size:18px;
 }
 
 
+/****NavBar ******/
+.nav-bar {
+    display:none;
+    padding:0;
+    margin:0;
+    }
+    
+    .nav-bar ul {
+    list-style: none;
+    }
+    
+    .nav-bar a {
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    padding:5px 0px;
+    font-size: 17px;
+    }
 
-
+/****Fin NavBar ********/
 
 section.banner img{
 width: 100%;
@@ -231,26 +254,7 @@ margin:10% 40%
 display:block;
 }
 
-.nav-bar {
-display:block;
-padding:0;
-margin:0;
-}
 
-.nav-bar ul {
-list-style: none;
-}
-
-.nav-bar a {
-text-decoration: none;
-color:black;
-display: inline-block;
-padding:5px 0px;
-font-size: 17px;
-}
-.burger-menu {
-display:none;
-}
 
 .main-article:hover{
 box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -279,7 +283,7 @@ text-align: center;
     align-self: center;
 }
 .nav-bar {
-    display:flex;
+    display:none;
     padding:0;
     margin:0;
     justify-content: space-between;
@@ -319,6 +323,10 @@ footer h3 {
 .top-header,.nav-bar {
     max-width:1200px;
     margin: 0 auto;
+    display:flex;
+}
+.hamburguer-button{
+    display: none;
 }
 }
 
