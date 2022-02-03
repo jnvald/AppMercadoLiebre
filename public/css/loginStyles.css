@@ -79,23 +79,55 @@ div.burger-menu i{
     width: 40px;
 }
 
-main {
+/************************************
+*************LOGIN******************/
+.container-login {
     display: flex;
-    background-color: #FFF;
-    width: 50%;
-    margin: auto;
+    background-color: rgb(225, 222, 222);
+    width: auto;
+    min-height: 400px;
+    min-width: 400px;
+    margin: 300px;
     justify-content: center;
     border-radius: 10px;
     margin-top: 20px;
 }
-
+.icon-person {
+    font-size:80px;
+    color: rgb(50, 106, 218);
+    display: inline-block;
+    justify-content:center;
+    align-items: center;
+}
+.icon-person p {
+    font-size:50px;
+    display: inline-block;
+    justify-content:center;
+    align-items: center;
+}
 .formulary {
-    padding: 15px 20px;
+    margin-top: 30px;
+    
 }   
+/********************************
+***FORMULARIO DE REGISTRO********/
 
+.container-registro {
+    display: flex;
+    background-color: rgb(225, 222, 222);
+    width: auto;
+    min-height: 400px;
+    min-width: 400px;
+    margin: 300px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 .form-control {
     margin-bottom: 15px;
+ 
 }
+
 
 .form-control label{
     margin-bottom: 5px;
@@ -111,29 +143,38 @@ main {
 }
 
 .button {
-    background-color: #ebebeb;
-    border: solid 1px #666;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 5px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    
+    width: 100%;  
+    background-color:rgb(50, 106, 218);
 }
-
-#login-submit{
-    background-color: #ebebeb;
-    transition: background-color 450ms;
-    margin: 0 auto;
-}
-
-#login-submit:hover{
-    background-color: #03264C;
+.button-reset {
+    font-size: 16px;
     color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+    background-color:rgb(181, 6, 6);
 }
-
+.button a {
+    text-decoration: none;
+    color: white;
+}
+.button:hover{
+    background-color:rgb(19, 77, 193);
+}
+.pregunta-registro p{
+    margin:5px;
+}
 input {
     border: 8px solid currentcolor;
   }

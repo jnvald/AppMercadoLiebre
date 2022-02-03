@@ -60,8 +60,12 @@
       </div>
     </header>
 
-    <main>
+    <div class="container-registro">
       <form action="/" method="get" class="formulary">
+        <div class="icon-person">
+          <i class="fas fa-id-card"></i>
+          <p>Registro</p>
+        </div>
         <p class="form-control">
           <label for="Nombre">Nombre y Apellido</label>
           <input
@@ -157,8 +161,14 @@
           />
         </p>
         <button type="submit" class="button">Enviar</button>
-        <button type="reset" class="button">Borrar</button>
+        <button type="reset" class="button-reset">Borrar</button>
+        <div class="pregunta-registro">
+          <p>¿Ya tienes una cuenta?</p>
+          <p>
+            ingresa <strong><a href="/login">Aquí</a></strong>
+          </p>
+        </div>
       </form>
-    </main>
+    </div>
   </body>
 </html>

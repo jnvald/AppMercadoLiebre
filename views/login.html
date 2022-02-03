@@ -59,38 +59,47 @@
       </div>
     </header>
 
-    <main>
-      <form action="/" method="get" class="formulary">
-        <p class="form-control">
-          <label for="usuario">Nombre de usuari@</label>
-          <input
-            type="text"
-            name="usuario"
-            id="usuario"
-            class="control"
-            minlength="5"
-            data-error="Dato no valido"
-            data-success="Correcto"
-            required
-          />
-        </p>
-        <p class="form-control">
-          <label for="password">Contraseña</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            class="control"
-            minlength="5"
-            data-error="Dato no valido"
-            data-success="Correcto"
-            required
-          />
-        </p>
-        <button type="submit" class="button" id="login-submit">
-          <a href="/">Enviar</a>
-        </button>
-      </form>
-    </main>
+      <div class="container-login">
+        <form action="/" method="get">
+          <div class="icon-person">
+            <i class="fas fa-user-circle"></i>
+            <p>Logín</p>
+          </div>
+          <p class="form-control">
+            <label for="usuario">Nombre de usuari@</label>
+            <input
+              type="text"
+              name="usuario"
+              id="usuario"
+              class="control"
+              minlength="5"
+              data-error="Dato no valido"
+              data-success="Correcto"
+              required
+            />
+          </p>
+          <p class="form-control">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="control"
+              minlength="5"
+              data-error="Dato no valido"
+              data-success="Correcto"
+              required
+            />
+          </p>
+          <button type="submit" class="button">
+            <a href="/">Enviar</a>
+          </button>
+          <div class="pregunta-registro">
+            <p>¿Aún no tienes una cuenta?</p>
+            <p>
+              Registrate <strong><a href="/register">Aquí</a></strong>
+            </p>
+          </div>
+        </form>
   </body>
 </html>
