@@ -13,76 +13,89 @@ p{
     font-size: 12px;
 }
 
-div.top-header{
-    padding: 5%;
-}
-
-header{
-    background-color: #EAC926;
-}
-
-header div.logo,
-.form{
-    width: 50%;
-    display: inline;
-}
-
-header div.logo{
-    padding: 10px;
-}
-header nav{
-    font-size: 12px;
-    display: none;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-header .form .input{
+section {
+    font-size:16px
+    }
+    
+    .logo {
+    padding:10px;
+    width:50%;
+    }
+    .copy-header {
+    font-weight: 400;
+    text-align: center;
+    }
+    
+    header .form .input{
+    display:block;
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
-}
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-div.burger-menu{
-    text-align: center;
-}
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-}
+    }
+    header input {
+    display:block;
+    outline:none;
+    line-height: 1.2em;
+    border:none;
+    width:250px;
+    font-size: 12pt;
+    }
+    .main-header-top-bar {
+    display:flex;
+    
+    }
+    
+    header div div .form {
+    display: flex;
+    margin:auto;
+    padding: 3px;
+    font-size:12px;
+    width:50%;
+    background-color: white;
+    }
+    .form i {
+    font-size:20px;
+    }
+    
+    header {
+    background-color: #EAC926;
+    padding:20px;
+    }
+    .nav-bar {
+    display:flex;
+    list-style:none;
+    }
+    .site-bar {
+    margin-bottom:15px;
+    }
+    .burger-menu {
+    text-align:center;
+    background-color:rgb(50, 106, 218);
+    margin:auto;
+    display:block;
+    max-width:50px;
+    color:white;
+    border-radius: 8px;
+    padding:15px 0px;
+    font-size:18px;
+    }
 
 /************************************
 *************LOGIN******************/
 .container-login {
     display: flex;
+    width: auto;
+    min-height: 400px;
+    min-width: 400px;
+    margin: 300px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container-login-form {
+    display: inline-block;
     background-color: rgb(225, 222, 222);
     width: auto;
     min-height: 400px;
@@ -96,7 +109,6 @@ div.burger-menu i{
     font-size:80px;
     color: rgb(50, 106, 218);
     display: inline-block;
-    justify-content:center;
     align-items: center;
 }
 .icon-person p {
@@ -105,10 +117,22 @@ div.burger-menu i{
     justify-content:center;
     align-items: center;
 }
-.formulary {
-    margin-top: 30px;
-    
-}   
+.button-login {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 106, 218);
+}
+.button-login a {
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+}
+.button-login:hover{
+    background-color:rgb(19, 77, 193);
+}
 /********************************
 ***FORMULARIO DE REGISTRO********/
 
@@ -125,9 +149,18 @@ div.burger-menu i{
 }
 .form-control {
     margin-bottom: 15px;
- 
 }
-
+.container-register-form {
+    display: inline-block;
+    background-color: rgb(225, 222, 222);
+    width: auto;
+    min-height: 200px;
+    min-width: 400px;
+    margin: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 
 .form-control label{
     margin-bottom: 5px;
@@ -165,43 +198,37 @@ div.burger-menu i{
     width: 100%;  
     background-color:rgb(181, 6, 6);
 }
-.button a {
-    text-decoration: none;
-    color: white;
-}
-.button:hover{
-    background-color:rgb(19, 77, 193);
-}
+
 .pregunta-registro p{
     margin:5px;
 }
 input {
     border: 8px solid currentcolor;
+    color: black;
   }
 
 input:invalid {
-    border: 2px dashed red;
+    border: 1px solid silver;
   }
 
 input:invalid:required {
-    border: solid 2px #666;
     border-radius: 2px;
 }
 
 input:invalid:focus {
-    background-color: #1259c3;
+    background-color: #ffffff;
     content: 'Insuficientes caracteres';
     color: rgb(0, 0, 0);
 
   }
 
   input:valid{
-      border: 2px #03264C
+      border: 2px #f85104
   }
 
   input:valid:focus{
-      color: black;
-      background-color:#EAC926;
+      color: rgb(0, 0, 0);
+      background-color:#ffffff;
   }
 
 /*--TABLETS--*/
@@ -211,7 +238,7 @@ input:invalid:focus {
         flex-wrap: wrap;
     }
     header nav {
-       display: flex;
+       display: none;
        justify-content: space-between;
     }
     header nav ul{
@@ -222,7 +249,7 @@ input:invalid:focus {
         margin: 0 10px;
     }
     .burger-menu{
-        display: none;
+        display: flex;
     }
 }
 
